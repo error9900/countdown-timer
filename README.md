@@ -1,2 +1,3 @@
 # countdown-timer
- 
+
+NOTE: This code was written with the intent to make it as self-documenting as possible...
