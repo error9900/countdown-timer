@@ -45,6 +45,8 @@ def timer_loop(seconds):
 
         sleep_for_one_second()
 
+        clear_line()
+
 
 def clear_line():
     blank_line = " " * 80
@@ -67,7 +69,6 @@ def print_final_string():
 
 def countdown_timer():
     timer_loop(get_seconds())
-    clear_line()
     print_final_string()
 
 
