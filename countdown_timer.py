@@ -1,5 +1,10 @@
+import os
 import time
 from datetime import datetime
+
+
+def clear_console():
+    os.system("clear")
 
 
 def get_minutes():
@@ -73,6 +78,7 @@ def countdown_timer():
 
 
 def main():
+    clear_console()
     countdown_timer()
 
 
