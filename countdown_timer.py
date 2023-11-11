@@ -3,7 +3,10 @@ import time
 from datetime import datetime
 
 
+# TO DO: Troubleshoot all trunk-ignore comments...
 def clear_console():
+    # trunk-ignore(bandit/B605)
+    # trunk-ignore(bandit/B607)
     os.system("clear")
 
 
@@ -41,7 +44,7 @@ def timer_loop(seconds):
     for seconds_remaining in range(range_start, range_stop, range_step):
         strings_to_print = [
             tab,
-            f"{seconds_remaining // 60}",
+            f"{seconds_remaining // 60:02}",
             ":",
             f"{seconds_remaining % 60:02}",
         ]
